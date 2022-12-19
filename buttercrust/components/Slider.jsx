@@ -9,8 +9,7 @@ const Slider = () => {
     const images =[
         "/img/featured.png",
         "/img/featured2.png",
-        "/img/featured3.png",
-
+        
     ];
 
     const handleArrow = (direction)=>{
