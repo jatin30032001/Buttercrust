@@ -103,6 +103,7 @@ const Cart = () => {
               <th>Price</th>
               <th>Quantity</th>
               <th>Total</th>
+
             </tr>
           </tbody>
           <tbody>
@@ -163,18 +164,8 @@ const Cart = () => {
                 onClick={() => setCash(true)}
               >
                 CASH ON DELIVERY
+            
               </button>
-              <PayPalScriptProvider
-                options={{
-                  "client-id":
-                    "ATTL8fDJKfGzXNH4VVuDy1qW4_Jm8S0sqmnUTeYtWpqxUJLnXIn90V8YIGDg-SNPaB70Hg4mko_fde4-",
-                  components: "buttons",
-                  currency: "USD",
-                  "disable-funding": "credit,card,p24",
-                }}
-              >
-                <ButtonWrapper currency={currency} showSpinner={false} />
-              </PayPalScriptProvider>
             </div>
           ) : (
             <button onClick={() => setOpen(true)} className={styles.button}>
